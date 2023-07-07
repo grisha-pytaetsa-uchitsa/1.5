@@ -1,0 +1,181 @@
+@font-face {
+  font-family: "TT Lakes";
+  src: url("fonts/TTLakes-Bold.eot");
+  src: local("fonts/TT Lakes Bold"), local("fonts/TTLakes-Bold"),
+    url("fonts/TTLakes-Bold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/TTLakes-Bold.woff") format("woff"),
+    url("fonts/TTLakes-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  src: url("fonts/TTLakes-Regular.eot");
+  src: local("fonts/TT Lakes Regular"), local("fonts/TTLakes-Regular"),
+    url("fonts/TTLakes-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/TTLakes-Regular.woff") format("woff"),
+    url("fonts/TTLakes-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  src: url("fonts/TTLakes-Medium.eot");
+  src: local("fonts/TT Lakes Medium"), local("fonts/TTLakes-Medium"),
+    url("fonts/TTLakes-Medium.eot?#iefix") format("embedded-opentype"),
+    url("fonts/TTLakes-Medium.woff") format("woff"),
+    url("fonts/TTLakes-Medium.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "TT Lakes", "Arial", sans-serif;
+  font-size: 14px;
+  background-color: #f2f2f2;
+}
+
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.header__container {
+  background-image: linear-gradient(to right, #f8f8f8 0%, #ffffff 98.61%);
+}
+
+.header__title {
+  font-family: "TT Lakes", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #7e7e82;
+  text-transform: uppercase;
+  padding: 16px 0;
+}
+
+.main__container {
+  padding-top: 16px;
+}
+
+.slider__image {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+  height: 72px;
+  padding: 0 16px;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.slider__button {
+  width: 40px;
+  height: 40px;
+  background-image: url(img/dropdown.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid red;
+  border-radius: 50%;
+}
+
+.main__button,
+.main__button--hidden {
+  display: flex;
+  align-items: center;
+  height: 24px;
+  margin: 24px 0;
+}
+
+.main__button-span {
+  font-family: "TT Lakes", "Arial", sans-serif;
+  color: #1b1c21;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  body {
+    max-height: 234px;
+    padding-bottom: 32px;
+  }
+  .main__button {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 24px;
+  }
+
+  .main__container {
+    padding-top: 24px;
+  }
+
+  .slider__wrapper {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .slider__image {
+    width: 224px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .container {
+    padding: 0 32px;
+  }
+
+  .main__container {
+    padding-top: 24px;
+  }
+
+  .slider__image {
+    width: 240px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.swiper-slide {
+  width: auto;
+}
+
+.swiper-pagination {
+  position: relative;
+  margin-top: 16px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #b5b6bc;
+}
