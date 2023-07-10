@@ -102,8 +102,8 @@ button {
   border-radius: 50%;
 }
 
-.main__button,
-.main__button--hidden {
+.main__button-more,
+.main__button-hide {
   display: flex;
   align-items: center;
   height: 24px;
