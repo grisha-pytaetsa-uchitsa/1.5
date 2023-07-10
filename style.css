@@ -102,14 +102,6 @@ button {
   border-radius: 50%;
 }
 
-.main__button-more,
-.main__button-hide {
-  display: flex;
-  align-items: center;
-  height: 24px;
-  margin: 24px 0;
-}
-
 .main__button-span {
   font-family: "TT Lakes", "Arial", sans-serif;
   color: #1b1c21;
@@ -147,6 +139,14 @@ button {
   }
   .slider__image {
     width: 224px;
+  }
+
+  .main__button-more,
+  .main__button-hide {
+    display: flex;
+    align-items: center;
+    height: 24px;
+    margin: 24px 0;
   }
 }
 
