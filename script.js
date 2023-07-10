@@ -1,7 +1,7 @@
-let rascryt = document.querySelector(".main__button");
+let rascryt = document.querySelector(".main__button-more");
 let slideContainer = document.querySelector(".swiper-container");
 let slide = slideContainer.querySelectorAll(".swiper-slide");
-let scryt = document.querySelector(".main__button--hidden");
+let scryt = document.querySelector(".main__button-hide");
 
 let width = document.documentElement.clientWidth;
 
