@@ -122,7 +122,7 @@ button {
     max-height: 234px;
     padding-bottom: 32px;
   }
-  .main__button {
+  .main__button-more {
     display: none;
   }
 }
@@ -133,6 +133,9 @@ button {
   }
 
   .main__container {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
     padding-top: 24px;
   }
 
@@ -154,6 +157,11 @@ button {
 
   .main__container {
     padding-top: 24px;
+  }
+
+  .main__container {
+    width: 100%;
+    max-width: 1120px;
   }
 
   .slider__image {
