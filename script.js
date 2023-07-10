@@ -5,13 +5,13 @@ let scryt = document.querySelector(".main__button-hide");
 
 let width = document.documentElement.clientWidth;
 
-if (width >= 768 && width < 992) {
+if (width >= 768 && width < 1120) {
   for (let i = 6; i < slide.length; i++) {
     slide[i].classList.add("hidden");
   }
 }
 
-if (width >= 992) {
+if (width >= 1120) {
   for (let i = 8; i < slide.length; i++) {
     slide[i].classList.add("hidden");
   }
@@ -26,13 +26,13 @@ rascryt.addEventListener("click", function () {
 });
 
 scryt.addEventListener("click", function () {
-  if (width >= 768 && width < 991) {
+  if (width >= 768 && width < 1120) {
     for (let i = 6; i < slide.length; i++) {
       slide[i].classList.add("hidden");
     }
   }
 
-  if (width >= 992) {
+  if (width >= 1120) {
     for (let i = 8; i < slide.length; i++) {
       slide[i].classList.add("hidden");
     }
